@@ -178,6 +178,17 @@
             </ul>
         </td>
     {/if}
+    {#if headers.includes("creatures")}
+        <td>
+            <ul class="encounter-xp xp">
+                {#if totalXP > 0 && difficulty}
+                    <strong> {difficulty.totalXp} </strong>
+                {:else}
+                    -
+                {/if}
+            </ul>
+        </td>
+    {/if}
     {#if plugin.data.displayDifficulty}
         <td>
             <div class="encounter-xp difficulty">

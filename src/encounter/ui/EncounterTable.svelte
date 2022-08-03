@@ -38,6 +38,9 @@
             {#if headers.includes("players")}
                 <th>Players</th>
             {/if}
+            {#if headers.includes("creatures")}
+                <th>XP</th>
+            {/if}
             {#if plugin.data.displayDifficulty}
                 <th>Difficulty</th>
             {/if}
